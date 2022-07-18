@@ -47,6 +47,7 @@
     ]
   },
   "dependencies": {
+    "@parcel/namer-default": "^2.6.0",
     "@sentry/gatsby": "^7.4.1",
     "@sentry/tracing": "^7.4.1",
     "classnames": "^2.3.1",

@@ -4,10 +4,12 @@ template: "page"
 socialImage: "/notebook.jpg"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+Hello! Welcome to my blog.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/notebook.jpg)
+I am Bill, a software developer from Vietnam. I have been working in Singapore since 2012.
 
-_Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi._
+The idea of having a simple blog started in 2021, when I realized that I did not have a good place to consolidate the information, tips, and knowledge that I share with other people in various places: Live streams, talks, comments on Facebook groups or LinkedIn, messages in community Slack channels, or even private messages.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+After much hesitation, here it is.
+
+This blog is built using Gatsby on top of a MIT-licensed template from [alxshelepenok](https://github.com/alxshelepenok/gatsby-starter-lumen)
