@@ -13,6 +13,10 @@
       "path": "/"
     },
     {
+      "label": "Articles-Vi",
+      "path": "/vi"
+    },    
+    {
       "label": "About me",
       "path": "/pages/about"
     },

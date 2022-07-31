@@ -4,6 +4,9 @@ const templates = Object.freeze({
   indexTemplate: path.resolve(
     "./src/templates/IndexTemplate/IndexTemplate.tsx",
   ),
+  indexTemplateVi: path.resolve(
+    "./src/templates/IndexTemplate/IndexTemplateVi.tsx",
+  ),
   notFoundTemplate: path.resolve(
     "./src/templates/NotFoundTemplate/NotFoundTemplate.tsx",
   ),

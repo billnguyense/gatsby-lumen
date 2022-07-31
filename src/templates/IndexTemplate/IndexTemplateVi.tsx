@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { SharedIndexTemplate } from "./SharedIndexTemplate";
 
 export const query = graphql`
-  query IndexTemplate($limit: Int!, $offset: Int!) {
+  query IndexTemplateVi($limit: Int!, $offset: Int!) {
     allMarkdownRemark(
       limit: $limit
       skip: $offset
@@ -11,7 +11,7 @@ export const query = graphql`
         frontmatter: {
           template: { eq: "post" }
           draft: { ne: true }
-          tags: { ne: "vi_VN" }
+          tags: { eq: "vi_VN" }
         }
       }
     ) {
