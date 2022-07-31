@@ -131,19 +131,32 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
     }
   });
 
-  const path = constants.routes.indexRoute;
-  const template = constants.templates.indexTemplate;
-  const posts = await queries.postsQuery(graphql);
-  const total = Math.ceil((posts?.edges?.length ?? 0) / postsLimit);
+  await generateHomePageWithPagination(
+    constants.routes.indexRoute,
+    constants.templates.indexTemplate,
+  );
 
-  for (let page = 0; page < total; page += 1) {
-    createWithPagination({
-      limit: postsLimit,
-      template,
-      total,
-      page,
-      path,
-    });
+  await generateHomePageWithPagination(
+    constants.routes.indexRouteVi,
+    constants.templates.indexTemplateVi,
+  );
+
+  async function generateHomePageWithPagination(
+    path: string,
+    template: string,
+  ) {
+    const posts = await queries.postsQuery(graphql);
+    const total = Math.ceil((posts?.edges?.length ?? 0) / postsLimit);
+
+    for (let page = 0; page < total; page += 1) {
+      createWithPagination({
+        limit: postsLimit,
+        template,
+        total,
+        page,
+        path,
+      });
+    }
   }
 };
 
