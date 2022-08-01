@@ -2,10 +2,8 @@ import { graphql } from "gatsby";
 import { SharedIndexTemplate } from "./SharedIndexTemplate";
 
 export const query = graphql`
-  query IndexTemplate($limit: Int!, $offset: Int!) {
+  query IndexTemplate {
     allMarkdownRemark(
-      limit: $limit
-      skip: $offset
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
         frontmatter: {
